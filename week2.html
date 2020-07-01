@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Week 2: Python Basics</title>
+
+	<link rel="stylesheet" href="reveal.js-master/dist/reset.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/theme/simple.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="reveal.js-master/plugin/highlight/monokai.css" id="highlight-theme">
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+				<textarea data-template>
+					  ## Week 2:
+                        GitHub | Python Basics | Data Types and Logic Control | Strings & Loops
+					</textarea>
+			</section>
+			<section>
+				<h2>Git</h2>
+				<p>Popular source code repository hosts include: GitHub, GitLab, BitBucket</p>
+
+				<img src="img/github-flow.png" height="400px" />
+
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Jupyter Notebook
+					  <div class="container">
+						<div class="col"><img src="img/jupyter-logo.png" height="300px"/></div>
+						<div class="col">
+							<h3><a href="https://jupyter.org/">Jupyter</a></h3>
+                            <p>Web application that allows you to create and share documents with live code</p>
+                            <p>Great for: Data cleaning, data exploration, data analysis (pre-production)</p>
+						</div>
+					  </div>
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+                      ## Data Types
+                      <div class="container">
+						<div class="col">
+                        <h3>Variable Types</h3>
+                            <ul>
+                            <li>string</li>
+                            <li>float</li>
+                            <li>integer</li>
+                            <li>boolean</li>
+                        </ul></div>
+                        <div class="col">
+							<h3>Other standard data types</h3>
+                            <ul>
+                                <li>Lists</li>
+								<li>Dictionaries</li>
+								<li>Sets</li>
+								<li>Tuples</li>
+                            </ul>
+						</div>
+
+                        </div>
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Arithmetic operators and Boolean conditionals
+					  <div class="container">
+						<div class="col">
+							<h3>Arithmetic Operators</h3>
+                            <ul>
+                                <li>+</li>
+                                <li>-</li>
+                                <li>*</li>
+                                <li>/</li>
+                                <li>%</li>
+                                <li>**</li>
+                                <li>//</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+							<h3>Comparison Operators</h3>
+                            <ul>
+                                <li>==</li>
+                                <li>!=</li>
+                                <li><</li>
+                                <li>></li>
+                                <li>>=</li>
+                                <li><=</li>
+                            </ul>
+						</div>
+
+
+                        </div>
+
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## Boolean logic
+					 ```python
+					if condition0:
+						action0
+					elif condition1:
+						action1
+					...
+					else:
+						action2
+					 ```
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## Strings
+					 * `s.upper()`
+					 * `s.lower()`
+					 * `s.strip()`
+					 * `s.split()`
+					 * `''.join(list)`
+					 * `s.format(x)`
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## For/while loops
+					 ```python
+					for x in iteration:
+						action
+					 ```
+
+					 ```python
+					 while condition is true:
+					 	action
+					 ```
+
+					 Nested loops: Best practice is no deeper than three nested loops
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## List and Dictionary Comprehension
+					 ```python
+					l = [0, 1, 2, 3, 4]
+					[x for x in l]
+					 ```
+
+					 ```python
+					 d = {'a': 0, 'b': 1, 'c':2}
+					 {k:v*2 for k, v in d.items()}
+					 ```
+					</textarea>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="reveal.js-master/dist/reveal.js"></script>
+	<script src="reveal.js-master/plugin/notes/notes.js"></script>
+	<script src="reveal.js-master/plugin/markdown/markdown.js"></script>
+	<script src="reveal.js-master/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
