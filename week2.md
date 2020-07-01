@@ -87,6 +87,7 @@ if a == 5:
 elif a > 0:
     print('a is positive')
 ```
+## Strings and For Loops
 
 ### Strings
 
@@ -111,4 +112,10 @@ Formatting:
 ```
 x = "Good {}, good {}, and good {}"
 x.format('afternoon', 'evening', 'night')
+```
+
+### List and dictionary comprehension
+```
+d = {'a': 0, 'b': 1, 'c':2}
+{k:v*2 for k, v in d.items()}
 ```
