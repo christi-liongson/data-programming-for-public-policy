@@ -1,5 +1,5 @@
 # Week 2
-GitHub | Python Basics | Data Types and Logic Control
+GitHub | Python Basics | Data Types and Logic Control | Strings & Loops
 
 ## Data Types
 
@@ -86,4 +86,29 @@ if a == 5:
     print('a is equal to 5')
 elif a > 0:
     print('a is positive')
+```
+
+### Strings
+
+```
+x = "Good afternoon, good evening, and good night"
+x.split()
+```
+Note that using split does not remove punctuation!
+
+If you want to split by comma, you have to put that as a parameter in the string
+```
+x.split(',')
+```
+
+Joining them back together (note that these need to be strings in the list)
+```
+l = x.split()
+' '.join(l)
+```
+
+Formatting:
+```
+x = "Good {}, good {}, and good {}"
+x.format('afternoon', 'evening', 'night')
 ```
