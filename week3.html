@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Week 3</title>
+
+	<link rel="stylesheet" href="reveal.js-master/dist/reset.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/theme/simple.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="reveal.js-master/plugin/highlight/monokai.css" id="highlight-theme">
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+				<textarea data-template>
+					  ## Week 3:
+					  Functions | Global and Local Variables
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## Notes on Homework Assignments
+
+					  * Be sure to review [Python Style](https://www.python.org/dev/peps/pep-0008/) before submitting your code!
+					  * Submit all homework using the homework.py file: Do not create a new file!
+					  * Review your code for any redundant expressions, or copied code that could be a function. Remove all testing print() statements
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## Functions
+					```python
+					def calc_hypotenuse(a, b):
+						'''
+						Calculates hypotenuse of a right triangle
+
+						Inputs:
+							a (numeric): Length of side a
+							b (numeric): Length of side b
+						Returns: Float
+						'''
+						c = (a**2 + b**2) ** (1/2)
+						return c
+					```
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Programming Best Practice
+					If you find yourself copying and pasting the same line of
+					code, think about how this code could be assigned to a
+					variable or made into a function!
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Required arguments, keyword arguments, and default arguments
+					```python
+					def ret_info(name, location, weather):
+					```
+
+					vs.
+
+					```python
+					def ret_info(name="Abby", location="Hyde Park", weather="Sunny")
+					```
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Lambda/Anonymous function
+					Anonymous functions do not require the `def` keyword.
+
+					```python
+					lambda argument: expression
+					```
+
+					Lambda functions are restricted to one expression
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Local and Global Variables
+					* **Global Variables**: Variable declared outside of the function
+					* **Local Variables**: Variable declared inside the function
+
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Global Variables
+					  Globals can be very helpful when you have code that would rely on the same value!
+					  <div class="container">
+						<div class="col">
+							Instead of using redundant values within a function:
+							<pre><code>
+						def add_apple(s):
+							apple = "apple"
+							return s + apple
+						def remove_apple(s):
+							apple = "apple"
+							return s.replace(apple, "")
+							</code></pre>
+						</div>
+						<div class="col">
+						You can create  a global variable instead!
+						<pre><code>
+						APPLE = "apple"
+						def add_apple(s):
+							return s + APPLE
+						def remove_apple(s):
+							return s.replace(APPLE, "")
+								</code></pre>
+						</div>
+					  </div>
+					</textarea>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="reveal.js-master/dist/reveal.js"></script>
+	<script src="reveal.js-master/plugin/notes/notes.js"></script>
+	<script src="reveal.js-master/plugin/markdown/markdown.js"></script>
+	<script src="reveal.js-master/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
