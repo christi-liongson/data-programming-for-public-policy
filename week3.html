@@ -22,7 +22,7 @@
 			<section data-markdown>
 				<textarea data-template>
 					  ## Week 3:
-					  Functions | Global and Local Variables
+					  Functions | Global and Local Variables | Classes and Methods
 					</textarea>
 			</section>
 
@@ -31,8 +31,9 @@
 					  ## Notes on Homework Assignments
 
 					  * Be sure to review [Python Style](https://www.python.org/dev/peps/pep-0008/) before submitting your code!
-					  * Submit all homework using the homework.py file: Do not create a new file!
+					  * Submit all homework using the homework.py file: **Do not create a new file or change the name of your file!**
 					  * Review your code for any redundant expressions, or copied code that could be a function. Remove all testing print() statements
+					  * Python is naturally very readable: Keep this in mind when writing comments
 					</textarea>
 			</section>
 
@@ -123,6 +124,22 @@
 								</code></pre>
 						</div>
 					  </div>
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Classes
+					```python
+					class MyClass:
+						def __init__(self):
+							self.attribute_a = 'attribute a'
+							self.number_one = 1
+					```
+
+					In addition to `__init__`, there are other reserved
+					methods that you can use to describe the class, such as:
+					`__repr__` and `__str__`.
+
 					</textarea>
 			</section>
 

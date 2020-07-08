@@ -102,3 +102,49 @@ What is the expected output of `my_func()`? What is the expected output of
 `y`?
 
 Globals can be very helpful when you have code that would rely on the same value!
+
+# Classes and Methods
+
+```
+class MyClass:
+    class_attribute = 'class attribute!'
+
+    def __init__(self):
+        self.attribute_a = 'attribute a'
+        self.number_one = 1
+```
+
+I can create a new instance of the class by calling `my_instance = MyClass()`.
+And access the attributes through dot notation: `my_instance.attribute_a`
+and `my_instance.number_one`.
+
+As seen in the lecture, putting a parentheses after MyClass is important in
+the definition when it comes to inheritance. If there is no inheritance, you do
+not need parentheses.
+
+Note how the naming convention for classes and variables are different! Functions
+and variables in Python use snakecase, and classes use camel case.
+
+```
+class Vehicle:
+    def __init__(self, v_type, wheels, motor):
+        self.v_type = v_type
+        self.wheels = wheels
+        self.motor = motor
+    def drive(self):
+        return "I am driving my {} with {} wheels.".format(self.v_type, self.wheels)
+```
+
+Some examples of this vehicle class:
+
+```
+my_bike = Vehicle('bike', 2, False)
+my_bike.drive()
+```
+
+```
+my_car = Vehicle('car', 4, True)
+my_car.drive()
+```
+
+What is the output of `type(my_bike)`?
