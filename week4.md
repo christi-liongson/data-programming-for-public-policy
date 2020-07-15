@@ -90,3 +90,60 @@ def spell_string(word):
 (Have someone explain what this function does)
 
 What happens if I call `spell_string("Hello")`?  What about `spell_string(8)`?
+
+## Try Except
+
+```python
+try:
+    print(x)
+except:
+    print('An exception occurred')
+```
+
+If x is undefined, what should output?
+
+You can also see the error calling it in the except:
+
+```python
+try:
+    print(x)
+except Exception as e:
+    print(e)
+    print('An exception occurred')
+```
+
+In the above example, the except captures all errors, not just a specific error.
+
+You can also specify the type of error in the except:
+
+```python
+try:
+    print(x)
+except NameError:
+    print('This is a NameError')
+except Exception as e:
+    print(e)
+    print('An exception occurred')
+```
+
+Since `print(x)` results in a NameError, the interpreter will locate the NameError
+Exception and do that action. You can add additional exception blocks for every
+error type.
+
+```python
+try:
+    print(x)
+except NameError:
+    print('This is a NameError')
+except Exception as e:
+    print(e)
+    print('An exception occurred')
+finally:
+    print('This action is done')
+```
+
+If i run this, what should return? If I run this after setting `x=5`, what
+returns?
+
+Adding finally at the end of the block will execute the expressions in the
+`finally` block regardless of whether or not there has been a try or except.
