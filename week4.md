@@ -40,7 +40,8 @@ class Student(Person):
 ```
 
 If we recreate the student `student = Student('Billy', 'Porter', 'Dance')`, we can
-call `student.print_enrollment()`. However, with the Person `person = Person('Regina', 'King')`,
+call `student.print_enrollment()`. We can also still call the person method `student.print_name()`. 
+However, with the Person `person = Person('Regina', 'King')`,
 running `person.print_enrollment()` will result in an error.
 
 ## Generators
