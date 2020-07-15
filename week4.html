@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Week 4</title>
+
+	<link rel="stylesheet" href="reveal.js-master/dist/reset.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/theme/simple.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="reveal.js-master/plugin/highlight/monokai.css" id="highlight-theme">
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+				<textarea data-template>
+					  ## Week 4:
+					  Inheritance | PEP8
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## Python Style Guide
+					  https://www.python.org/dev/peps/pep-0008/
+
+					  Readability and Consistency is important! When possible,
+					  err on the side of being explicit and straightforward
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Common Tips and Naming Conventions
+
+
+					Variables and functions are named using snakecase
+					```python
+					my_variable = "test variable"
+
+					def my_function():
+
+					```
+					* Avoid using names that begin with numbers
+					* Avoid using special characters other than `_`
+					* Avoid naming your variable with a data type, function,
+					  or method
+
+					Classes are named using camel case
+
+					```python
+					class MyClass
+					```
+
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Common Tips and Naming Conventions
+
+					* Lines should be no longer than 79 characters
+					* Minimize use of extra line breaks and whitespace between code
+
+
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					## Some ways to "lint" your code:
+					[Pylint](https://anaconda.org/anaconda/pylint) is a package
+					that will check your code for Python style!
+
+					In your terminal, navigate to your file and run:
+					```shell
+					user@MyComputer$ pylint my_file
+					```
+					Note: Pylint offers suggestions on your code. You don't
+					necessarily need to follow all the style suggestions that
+					Pylint offers
+
+					There are a bunch of other helpful resources online with
+					examples of good Python style.
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					## Inheritance
+					* **Parent Class**: The class being inherited from
+					* **Child Class**: Class that inherits from another class
+
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					## Generators
+					* Once you use the statement `yield`, the function becomes a
+					generator function. Using `return` terminates the function, while
+					`yield` pauses the function
+					* Helpful if you want to return back to a sequence
+
+
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					## Assertions
+
+					```python
+					assert Expression, Arguments
+					```
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					## Try and Except
+
+					```python
+					try:
+						action
+					except error_name:
+						action
+					```
+					</textarea>
+			</section>
+
+
+
+		</div>
+	</div>
+
+	<script src="reveal.js-master/dist/reveal.js"></script>
+	<script src="reveal.js-master/plugin/notes/notes.js"></script>
+	<script src="reveal.js-master/plugin/markdown/markdown.js"></script>
+	<script src="reveal.js-master/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
