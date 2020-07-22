@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Week 4</title>
+
+	<link rel="stylesheet" href="reveal.js-master/dist/reset.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/theme/simple.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="reveal.js-master/plugin/highlight/monokai.css" id="highlight-theme">
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+				<textarea data-template>
+					  ## Week 5:
+					  Intro to Data: Pandas
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## import
+
+					  You can import modules:
+
+					  ```python
+					  import math
+					  math.pi
+					  ```
+
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## import
+
+					While you can technically rename the module to almost any
+					string, there are naming conventions for these packages.
+
+					```python
+					import numpy as np
+					import pandas as pd
+					```
+
+					You can usually see the naming convention in their documentation.
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Pandas
+					[Documentation](https://pandas.pydata.org/docs/)
+					</textarea>
+			</section>
+
+
+
+		</div>
+	</div>
+
+	<script src="reveal.js-master/dist/reveal.js"></script>
+	<script src="reveal.js-master/plugin/notes/notes.js"></script>
+	<script src="reveal.js-master/plugin/markdown/markdown.js"></script>
+	<script src="reveal.js-master/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
