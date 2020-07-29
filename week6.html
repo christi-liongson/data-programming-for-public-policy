@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Week 6</title>
+
+	<link rel="stylesheet" href="reveal.js-master/dist/reset.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/theme/simple.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="reveal.js-master/plugin/highlight/monokai.css" id="highlight-theme">
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+				<textarea data-template>
+					  ## Week 6:
+					  Intro to Data: Pandas
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## Merge
+
+					![merge diagram](https://pandas.pydata.org/pandas-docs/stable/_images/merging_merge_on_key.png)
+
+					[Documentation](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html#database-style-dataframe-or-named-series-joining-merging)
+
+					Different types of merges:
+
+					* left
+					* right
+					* outer
+					* inner (default)
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Reshaping
+
+					  ### `pd.wide_to_long`
+
+					  #### Parameters:
+					  * df: DataFrame
+					  * stubnames: Wide format variables are expected to start with this stubname
+					  * i: Columns to use as id variables
+					  * j: Name of sub-observation variable
+
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Pivot
+					  <div class="container">
+						<div class="col"><img src="https://pandas.pydata.org/pandas-docs/stable/_images/reshaping_pivot.png" /></div>
+						<div class="col">
+							<h4>Parameters</h3>
+							<ul>
+								<li>index: Column(s) to make new frame's index</li>
+								<li>columns: Column(s) to make new frame's columns</li>
+								<li>values: Column(s) to use for new frame's values</li>
+							</ul>
+						</div>
+					  </div>
+
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Groupby
+
+					  `dataframe.groupby()`
+
+					</textarea>
+			</section>
+
+
+
+
+		</div>
+	</div>
+
+	<script src="reveal.js-master/dist/reveal.js"></script>
+	<script src="reveal.js-master/plugin/notes/notes.js"></script>
+	<script src="reveal.js-master/plugin/markdown/markdown.js"></script>
+	<script src="reveal.js-master/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
