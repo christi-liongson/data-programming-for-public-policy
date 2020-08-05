@@ -3,7 +3,7 @@ Slides and teaching resources for PPHA 30535: Data and Programming for Public Po
 
 ## Installation
 
-To view these slides, clone this repo to your local machine:
+To view these slides, clone this repo to your local machine by running the following line in your command line interface:
 
 ```
 git clone https://github.com/christi-liongson/data-programming-for-public-policy.git
