@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Week 8</title>
+
+	<link rel="stylesheet" href="reveal.js-master/dist/reset.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/theme/simple.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="reveal.js-master/plugin/highlight/monokai.css" id="highlight-theme">
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+				<textarea data-template>
+					  ## Week 8:
+					  Automated Data Retrieval | Web scraping
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## What is web scraping
+
+					* Web scraping extracts structured information from the web for data analysis
+					* By pulling content from websites, you can gather more data
+					and store/process them in different formats for analysis.
+
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Steps to web scraping
+
+					1. Inspect the website visually
+					2. Inspect the URL (if you are crawling multiple pages programatically)
+					3. Inspect the HTML code
+
+					The more you explore the webpage, the easier building the scraper will be!
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## pandas_datareader
+
+					* If you do not have pandas-datareader (or any of the following packages) installed, run the following in your terminal/command line:
+
+					```bash
+					conda install -c anaconda pandas-datareader
+					```
+
+					```bash
+					pip install pandas-datareader
+					```
+
+					_Note_: Do not add any install commands to your Python script
+
+					[Documentation](https://pandas-datareader.readthedocs.io/en/latest/)
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## requests
+
+					  [Documentation](https://2.python-requests.org/en/master/)
+
+					  ```python
+					import requests
+					response = requests.get('https://api.github.com/user', auth=('user', 'pass'))
+					```
+
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Crash Course in HTML
+					 * HTML is the language in which most websites are written. HTML often holds the content of the page.
+						 ** On websites, styling is often done in CSS, and interactive elements done through JavaScript
+					* The basis of HTML are tags and attributes
+
+
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## BeautifulSoup
+					  [Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+					  * Once you get the HTML string, use Beautiful Soup to parse the text
+
+					```bash
+					pip install beautifulsoup4
+					```
+
+					```python
+					from bs4 import BeautifulSoup
+					```
+
+					</textarea>
+			</section>
+
+
+
+		</div>
+	</div>
+
+	<script src="reveal.js-master/dist/reveal.js"></script>
+	<script src="reveal.js-master/plugin/notes/notes.js"></script>
+	<script src="reveal.js-master/plugin/markdown/markdown.js"></script>
+	<script src="reveal.js-master/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
