@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Week 9</title>
+
+	<link rel="stylesheet" href="reveal.js-master/dist/reset.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/theme/simple.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="reveal.js-master/plugin/highlight/monokai.css" id="highlight-theme">
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+				<textarea data-template>
+					  ## Week 9:
+					  Misc. Data Tools
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## HTTP Request Methods
+					* HTTP is a set of protocols designed send communication between a browser and a server
+					* Two main methods for these responses:
+						* `GET`: Request data from server
+						* `POST`: Submits data to be processed by the server
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## POST Requests for Web-Scraping
+					  [https://ww2.energy.ca.gov/almanac/renewables_data/wind/index_cms.php](https://ww2.energy.ca.gov/almanac/renewables_data/wind/index_cms.php)
+
+					  <img src=img/energy-site-screenshot.png height=400>
+					</textarea>
+			</section>
+
+
+
+		</div>
+	</div>
+
+	<script src="reveal.js-master/dist/reveal.js"></script>
+	<script src="reveal.js-master/plugin/notes/notes.js"></script>
+	<script src="reveal.js-master/plugin/markdown/markdown.js"></script>
+	<script src="reveal.js-master/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
