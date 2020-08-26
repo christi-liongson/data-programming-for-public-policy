@@ -5,6 +5,9 @@ Data Cleaning and Text Cleaning
 First, determine what you need from your data and how are you analyzing it. This
 will be the basis for determining what you need to do to clean your data.
 
+Note for these examples: As I'm going through the examples, think about the
+structure and the steps. Don't worry about the code.
+
 Example for data cleaning: Machine Learning Project (Jupyter notebook)
 Go over:
 Data Sources
