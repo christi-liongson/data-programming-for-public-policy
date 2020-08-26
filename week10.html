@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Week 9</title>
+	<title>Week 10</title>
 
 	<link rel="stylesheet" href="reveal.js-master/dist/reset.css">
 	<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
@@ -30,18 +30,25 @@
 				<textarea data-template>
 					  ## Tips for Data Cleaning: Review
 					  * What is your data source? Do any values need to be updated for your analysis?
-					  * Check data types:
-						  * Numeric values: Do they need to be binned/placed in categories? Would values need to be standardized?
-						  * String values: Do they represent categories, and if so, should they be converted into dummies?
-					  * When possible, vectorize functions instead of looping through each row dataset
-					  * Exploring in Jupyter is fine, but move code into a function to be more generalizable
+
+					  Check data types:
+					       * Numeric values: Do they need to be binned/placed in categories? Would values need to be standardized?
+						   * String values: Do they represent categories, and if so, should they be converted into dummies?
 					</textarea>
 			</section>
+			<section data-markdown>
+			<textarea data-template>
+				## Tips for Data Cleaning: Review
+				* When possible, vectorize functions instead of looping through each row dataset
+				* Exploring in Jupyter is fine, but move code into a function to be more generalizable
+			  </textarea>
+	  </section>
 			<section data-markdown>
 				<textarea data-template>
 					  ## Tips for Data Cleaning: Text
 					  * What is your analysis? What is the data source?
-					  * Generally, you may want to do the following:
+
+					  Generally, you may want to do the following:
 						  * Remove capitalization and punctuation
 						  * Tokenization
 						  * Stopwords
