@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Week 9</title>
+
+	<link rel="stylesheet" href="reveal.js-master/dist/reset.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
+	<link rel="stylesheet" href="reveal.js-master/dist/theme/simple.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="reveal.js-master/plugin/highlight/monokai.css" id="highlight-theme">
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+				<textarea data-template>
+					  ## Week 10:
+					  Data Cleaning Tools and Tips
+					</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					  ## Tips for Data Cleaning: Review
+					  * What is your data source? Do any values need to be updated for your analysis?
+					  * Check data types:
+						  * Numeric values: Do they need to be binned/placed in categories? Would values need to be standardized?
+						  * String values: Do they represent categories, and if so, should they be converted into dummies?
+					  * When possible, vectorize functions instead of looping through each row dataset
+					  * Exploring in Jupyter is fine, but move code into a function to be more generalizable
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					  ## Tips for Data Cleaning: Text
+					  * What is your analysis? What is the data source?
+					  * Generally, you may want to do the following:
+						  * Remove capitalization and punctuation
+						  * Tokenization
+						  * Stopwords
+						  * Optional: Lemmatize/Stem Words
+					  * Helpful packages: `re`, `nltk`
+					</textarea>
+			</section>
+
+
+
+		</div>
+	</div>
+
+	<script src="reveal.js-master/dist/reveal.js"></script>
+	<script src="reveal.js-master/plugin/notes/notes.js"></script>
+	<script src="reveal.js-master/plugin/markdown/markdown.js"></script>
+	<script src="reveal.js-master/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
